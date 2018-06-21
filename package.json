@@ -1,9 +1,8 @@
 {
   "name": "@4c/layout",
-  "version": "1.0.0",
-  "main": "lib/index.js",
-  "modules": "es/index.js",
-  "jsnext:main": "es/index.js",
+  "version": "0.0.0-development",
+  "main": "lib/css-modules/index.js",
+  "module": "es/css-modules/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/4Catalyzer/layout.git"
@@ -14,13 +13,15 @@
     "tdd": "jest --watch",
     "test": "npm run lint && jest",
     "testonly": "jest",
-    "build:es": "babel src -d es --env-name esm --ignore **/__tests__ --delete-dir-on-start",
-    "build:lib": "babel src -d lib --ignore **/__tests__ --delete-dir-on-start",
+    "build:es": "babel src -d es --env-name esm --ignore **/__tests__ --delete-dir-on-start -D",
+    "build:lib": "babel src -d lib --ignore **/__tests__ --delete-dir-on-start -D",
     "build": "npm run build:lib && npm run build:es",
     "prepublishOnly": "yarn run build",
     "lint": "eslint . && prettier --list-different --ignore-path .eslintignore '**/*.{json,css,md}'",
     "format": "eslint . --fix && prettier --write --ignore-path .eslintignore '**/*.{json,css,md}'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "publishConfig": {
     "access": "public"
@@ -69,6 +70,18 @@
     "eslint-plugin-react": "^7.5.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
-    "prettier": "^1.10.2"
+    "prettier": "^1.10.2",
+    "react": "^16.4.1",
+    "semantic-release": "^15.6.0",
+    "travis-deploy-once": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "prop-types-extra": "^1.1.0"
   }
 }
