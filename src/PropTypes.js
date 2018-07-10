@@ -4,7 +4,7 @@ import elementType from 'prop-types-extra/lib/elementType';
 export const propTypes = {
   direction: PropTypes.oneOf(['row', 'column']).isRequired,
   as: elementType.isRequired,
-  pad: PropTypes.bool,
+  pad: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
   wrap: PropTypes.bool,
   grow: PropTypes.bool,
   inline: PropTypes.bool,

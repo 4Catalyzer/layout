@@ -22,11 +22,16 @@ function Block(
   },
   ref,
 ) {
+  const combinedStyle =
+    style || flex != null
+      ? { ...style, flex: flex === true ? 1 : flex }
+      : style;
+
   return (
     <Component
       {...props}
       ref={ref}
-      style={{ ...style, flex: flex === true ? 1 : flex }}
+      style={combinedStyle}
       className={classNames(
         className,
         inline ? styles.blockInline : styles.block,

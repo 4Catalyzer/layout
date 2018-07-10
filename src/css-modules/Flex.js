@@ -24,21 +24,25 @@ function Flex(
   },
   ref,
 ) {
+  const combinedStyle =
+    style || flex != null
+      ? { ...style, flex: flex === true ? 1 : flex }
+      : style;
   return (
     <Component
       {...props}
       ref={ref}
-      style={{ ...style, flex: flex === true ? 1 : flex }}
+      style={combinedStyle}
       className={classNames(
         className,
         inline ? styles.flexInline : styles.flex,
-        pad && styles[`pad${pad === true ? '3' : pad}`],
         grow && styles.grow,
         wrap && styles.wrap,
-        align && styles[camelCase(align)],
-        alignSelf && styles[camelCase(alignSelf)],
+        pad && styles[`pad${pad === true ? '3' : pad}`],
+        align && styles[camelCase(`align-${align}`)],
+        alignSelf && styles[camelCase(`self-${alignSelf}`)],
         direction && styles[camelCase(direction)],
-        justify && styles[camelCase(justify)],
+        justify && styles[camelCase(`justify-${justify}`)],
       )}
     />
   );

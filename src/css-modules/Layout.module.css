@@ -1,3 +1,12 @@
+:root {
+  --fc-layout-pad-1: 2px;
+  --fc-layout-pad-2: 6px;
+  --fc-layout-pad-3: 10px;
+  --fc-layout-pad-4: 20px;
+  --fc-layout-pad-5: 30px;
+  --fc-layout-pad-6: 40px;
+}
+
 .block {
   display: block;
 }
@@ -6,13 +15,6 @@
 }
 
 .flex {
-  --pad-1: 2px;
-  --pad-2: 6px;
-  --pad-3: 10px;
-  --pad-4: 20px;
-  --pad-5: 30px;
-  --pad-6: 40px;
-
   display: flex;
 }
 
@@ -93,43 +95,43 @@
 }
 
 .pad-1.row > * + * {
-  margin-left: var(--pad-1);
+  margin-left: var(--fc-layout-pad-1);
 }
 .pad-1.column > * + * {
-  margin-top: var(--pad-1);
+  margin-top: var(--fc-layout-pad-1);
 }
 
 .pad-2.row > * + * {
-  margin-left: var(--pad-2);
+  margin-left: var(--fc-layout-pad-2);
 }
 .pad-2.column > * + * {
-  margin-top: var(--pad-2);
+  margin-top: var(--fc-layout-pad-2);
 }
 
 .pad-3.row > * + * {
-  margin-left: var(--pad-3);
+  margin-left: var(--fc-layout-pad-3);
 }
 .pad-3.column > * + * {
-  margin-top: var(--pad-3);
+  margin-top: var(--fc-layout-pad-3);
 }
 
 .pad-4.row > * + * {
-  margin-left: var(--pad-4);
+  margin-left: var(--fc-layout-pad-4);
 }
 .pad-4.column > * + * {
-  margin-top: var(--pad-4);
+  margin-top: var(--fc-layout-pad-4);
 }
 
 .pad-5.row > * + * {
-  margin-left: var(--pad-5);
+  margin-left: var(--fc-layout-pad-5);
 }
 .pad-5.column > * + * {
-  margin-top: var(--pad-5);
+  margin-top: var(--fc-layout-pad-5);
 }
 
 .pad-6.row > * + * {
-  margin-left: var(--pad-6);
+  margin-left: var(--fc-layout-pad-6);
 }
 .pad-6.column > * + * {
-  margin-top: var(--pad-6);
+  margin-top: var(--fc-layout-pad-6);
 }
