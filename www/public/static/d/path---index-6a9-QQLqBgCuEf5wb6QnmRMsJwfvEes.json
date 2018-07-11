@@ -1,0 +1,14 @@
+{
+  "pageContext": {
+    "jsonName": "index",
+    "internalComponentName": "ComponentIndex",
+    "path": "/",
+    "component": "/Users/jason/src/4c-layout/www/src/pages/index.js",
+    "componentChunkName": "component---src-pages-index-js",
+    "context": {},
+    "updatedAt": 1529589710593,
+    "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+    "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+    "componentPath": "/Users/jason/src/4c-layout/www/src/pages/index.js"
+  }
+}

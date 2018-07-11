@@ -1,6 +1,7 @@
 lib/
 es/
 
+.cache/
 # Logs
 logs
 *.log
