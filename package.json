@@ -10,9 +10,7 @@
   "author": "4Catalyzer",
   "license": "MIT",
   "scripts": {
-    "tdd": "jest --watch",
-    "test": "npm run lint && jest",
-    "testonly": "jest",
+    "test": "npm run lint",
     "build:es": "babel src -d es --env-name esm --ignore **/__tests__ --delete-dir-on-start -D",
     "build:lib": "babel src -d lib --ignore **/__tests__ --delete-dir-on-start -D",
     "build": "npm run build:lib && npm run build:es",
