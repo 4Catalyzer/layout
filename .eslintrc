@@ -11,9 +11,6 @@
     {
       "files": ["test/**"],
       "plugins": ["jest"],
-      "env": {
-        "jest/globals": true
-      },
       "rules": {
         "global-require": "off",
         "no-await-in-loop": "off",

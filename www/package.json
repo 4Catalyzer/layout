@@ -8,8 +8,12 @@
     "start": "yarn --cwd ../ build && gatsby develop"
   },
   "dependencies": {
-    "gatsby": "^2.0.0-beta.5",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "gatsby": "^2.0.0-rc.5",
+    "gatsby-plugin-css-literal-loader": "^1.0.0",
+    "gatsby-plugin-sass": "^2.0.0-rc.1",
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
