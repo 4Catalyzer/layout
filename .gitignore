@@ -1,7 +1,8 @@
 lib/
 es/
-
+www/public/
 .cache/
+
 # Logs
 logs
 *.log
