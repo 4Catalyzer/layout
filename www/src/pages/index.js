@@ -1,5 +1,5 @@
 import React from 'react';
-import 'normalize.css';
+
 import Layout from '../../../src/css-modules';
 
 // eslint-disable-next-line

@@ -1,5 +1,5 @@
 {
-  "extends": ["4catalyzer-react", "prettier"],
+  "extends": ["4catalyzer-react", "prettier", "prettier/react"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error"
