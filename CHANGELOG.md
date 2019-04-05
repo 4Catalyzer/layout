@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/4Catalyzer/layout/compare/v0.2.0...v0.2.1) (2019-04-05)
+
+
+### Bug Fixes
+
+* add license file ([0024296](https://github.com/4Catalyzer/layout/commit/0024296))
+
 # [0.2.0](https://github.com/4Catalyzer/layout/compare/v0.1.1...v0.2.0) (2018-09-04)
 
 
