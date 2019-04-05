@@ -2,6 +2,7 @@
   "name": "@4c/layout",
   "version": "0.2.0",
   "main": "lib/css-modules/index.js",
+  "types": "lib/index.d.ts",
   "module": "es/css-modules/index.js",
   "repository": {
     "type": "git",
@@ -13,7 +14,8 @@
     "test": "npm run lint",
     "build:es": "babel src -d es --env-name esm --ignore **/__tests__ --delete-dir-on-start -D",
     "build:lib": "babel src -d lib --ignore **/__tests__ --delete-dir-on-start -D",
-    "build": "npm run build:lib && npm run build:es",
+    "build:types": "cp types/* lib",
+    "build": "npm run build:lib && npm run build:es && npm run build:types",
     "prepublishOnly": "yarn run build",
     "lint": "eslint . && prettier --list-different --ignore-path .eslintignore '**/*.{json,css,md}'",
     "format": "eslint . --fix && prettier --write --ignore-path .eslintignore '**/*.{json,css,md}'",
@@ -78,6 +80,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
+    "@types/react": "^16.8.12",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
     "prop-types-extra": "^1.1.0"
