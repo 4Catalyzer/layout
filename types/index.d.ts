@@ -1,12 +1,14 @@
+// TypeScript Version: 3.2
+
 import * as React from 'react';
 
-export type Omit<T, U> = Pick<T, Exclude<keyof T, keyof U>>;
+type Omit<T, U> = Pick<T, Exclude<keyof T, keyof U>>;
 
-export type PropsOf<
-  Tag extends React.ReactType
+type PropsOf<
+  Tag extends React.ElementType
 > = Tag extends keyof JSX.IntrinsicElements
   ? JSX.IntrinsicElements[Tag]
-  : Tag extends React.SFC<infer Props>
+  : Tag extends React.FunctionComponent<infer Props>
   ? Props & React.Attributes
   : Tag extends React.ComponentClass<infer Props2>
   ? (Tag extends new (...args: any[]) => infer Instance
@@ -14,23 +16,16 @@ export type PropsOf<
       : never)
   : never;
 
-export type ReplaceProps<Inner extends React.ReactType, P> = Omit<
+type ReplaceProps<Inner extends React.ElementType, P> = Omit<
   PropsOf<Inner>,
   P
 > &
   P;
 
-export interface BsPrefixProps<As extends React.ReactType> {
-  as?: As;
-  bsPrefix?: string;
-}
-
-export class BsPrefixComponent<
-  As extends React.ReactType,
+declare class ComponentWithAs<
+  As extends React.ElementType,
   P = {}
-> extends React.Component<ReplaceProps<As, BsPrefixProps<As> & P>> {}
-
-type Direction = 'row' | 'column';
+> extends React.Component<ReplaceProps<As, { as?: As } & P>> {}
 
 type Align =
   | 'start'
@@ -56,24 +51,45 @@ type Content =
   | 'space-around'
   | 'space-evenly';
 
-export interface LayoutProps {
-  /** default to 'row' */
-  direction?: Direction;
-  pad?: boolean | number;
-  wrap?: boolean;
+export interface BlockProps {
   grow?: boolean;
   inline?: boolean;
   flex?: boolean | number;
   /** default to 'stretch' */
-  align?: Align;
   alignSelf?: Align;
+}
+
+export interface FlexProps extends BlockProps {
+  /** default to 'row' */
+  direction?: 'row' | 'column';
+  pad?: boolean | number;
+  wrap?: boolean;
+  /** default to 'stretch' */
+  align?: Align;
   alignContent?: Content;
   /** default to 'flex-start' */
   justify?: Content;
 }
 
+declare class Flex<
+  As extends React.ElementType = 'div'
+> extends ComponentWithAs<As, FlexProps> {}
+
+declare class Block<
+  As extends React.ElementType = 'div'
+> extends ComponentWithAs<As, BlockProps> {}
+
+export type LayoutProps =
+  | ({ display?: 'flex' } & FlexProps)
+  | ({ display: 'block' } & BlockProps);
+
 declare class Layout<
-  As extends React.ReactType = 'div'
-> extends BsPrefixComponent<As, LayoutProps> {}
+  As extends React.ElementType = 'div'
+> extends ComponentWithAs<As, LayoutProps> {
+  static Flex: typeof Flex;
+  static Block: typeof Block;
+
+  static Spacer: React.ComponentType;
+}
 
 export default Layout;

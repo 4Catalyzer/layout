@@ -1,26 +1,27 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
-import classNames from 'classnames';
 
-import styles from './Layout.module.css';
+import classNames from 'classnames';
+import React from 'react';
+
 import { propTypes, defaultProps } from '../PropTypes';
 import camelCase from './camelCase';
+import styles from './Layout.module.css';
 
 function Flex(
   {
-    className,
-    style,
+    as: Component,
     direction,
     pad,
-    grow,
-    flex,
     wrap,
+    grow,
     inline,
+    flex,
+    align,
     alignSelf,
     alignContent,
-    align,
     justify,
-    as: Component,
+    className,
+    style,
     ...props
   },
   ref,
@@ -29,6 +30,7 @@ function Flex(
     style || flex != null
       ? { ...style, flex: flex === true ? 1 : flex }
       : style;
+
   return (
     <Component
       {...props}
@@ -36,19 +38,20 @@ function Flex(
       style={combinedStyle}
       className={classNames(
         className,
-        inline ? styles.flexInline : styles.flex,
-        grow && styles.grow,
-        wrap && styles.wrap,
-        pad && styles[`pad${pad === true ? '3' : pad}`],
-        align && styles[camelCase(`align-${align}`)],
-        alignContent && styles[camelCase(`align-content-${alignContent}`)],
-        alignSelf && styles[camelCase(`self-${alignSelf}`)],
         direction && styles[camelCase(direction)],
+        pad && styles[`pad${pad === true ? '3' : pad}`],
+        wrap && styles.wrap,
+        grow && styles.grow,
+        inline ? styles.flexInline : styles.flex,
+        align && styles[camelCase(`align-${align}`)],
+        alignSelf && styles[camelCase(`self-${alignSelf}`)],
+        alignContent && styles[camelCase(`align-content-${alignContent}`)],
         justify && styles[camelCase(`justify-${justify}`)],
       )}
     />
   );
 }
+
 const DecoratedFlex = React.forwardRef(Flex);
 DecoratedFlex.propTypes = propTypes;
 DecoratedFlex.defaultProps = defaultProps;
