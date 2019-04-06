@@ -1,12 +1,21 @@
-sudo: false
-
 language: node_js
+
 node_js:
-  - '10'
-  - '8'
+  - "10"
+  - "8"
+
+after_success:
+  - yarn codecov
+
 cache: yarn
-after_script:
-  - yarn travis-deploy-once "yarn semantic-release"
 branches:
   only:
     - master
+
+jobs:
+  include:
+    - stage: release
+      node_js: "10"
+      script:
+        - yarn run build
+        - yarn semantic-release

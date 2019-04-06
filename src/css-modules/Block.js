@@ -1,23 +1,27 @@
-import React from 'react';
-import classNames from 'classnames';
-
 /* eslint-disable react/prop-types */
-import styles from './Layout.module.css';
+
+import classNames from 'classnames';
+import React from 'react';
+
 import { propTypes, defaultProps } from '../PropTypes';
 import camelCase from './camelCase';
+import styles from './Layout.module.css';
 
 function Block(
   {
+    as: Component,
+    direction: _d,
+    pad: _p,
+    wrap: _w,
+    grow,
+    inline,
+    flex,
+    align: _a,
+    alignSelf,
+    alignContent: _aC,
+    justify: _j,
     className,
     style,
-    inline,
-    alignSelf,
-    grow,
-    flex,
-    as: Component,
-    direction: _1,
-    align: _2,
-    justify: _3,
     ...props
   },
   ref,
@@ -34,8 +38,8 @@ function Block(
       style={combinedStyle}
       className={classNames(
         className,
-        inline ? styles.blockInline : styles.block,
         grow && styles.grow,
+        inline ? styles.blockInline : styles.block,
         alignSelf && styles[camelCase(alignSelf)],
       )}
     />
