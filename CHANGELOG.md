@@ -1,3 +1,10 @@
+## [0.2.2](https://github.com/4Catalyzer/layout/compare/v0.2.1...v0.2.2) (2019-04-06)
+
+
+### Bug Fixes
+
+* Fix type definitions ([#5](https://github.com/4Catalyzer/layout/issues/5)) ([ee95fe3](https://github.com/4Catalyzer/layout/commit/ee95fe3))
+
 ## [0.2.1](https://github.com/4Catalyzer/layout/compare/v0.2.0...v0.2.1) (2019-04-05)
 
 
