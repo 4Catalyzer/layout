@@ -11,6 +11,7 @@ function Block(
   {
     as: Component,
     direction: _d,
+    reverse: _r,
     pad: _p,
     wrap: _w,
     grow,

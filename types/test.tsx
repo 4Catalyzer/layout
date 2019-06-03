@@ -3,6 +3,9 @@
 import * as React from 'react';
 import Layout from '@4c/layout';
 
+<Layout />;
+<Layout direction="column" reverse />;
+
 <Layout align="start" grow />;
 <Layout display="block" grow />;
 <Layout display="block" align="start" />; // $ExpectError
