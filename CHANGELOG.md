@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/4Catalyzer/layout/compare/v0.2.2...v0.2.3) (2019-06-03)
+
+
+### Bug Fixes
+
+* Add reverse prop ([#6](https://github.com/4Catalyzer/layout/issues/6)) ([6d94451](https://github.com/4Catalyzer/layout/commit/6d94451))
+
 ## [0.2.2](https://github.com/4Catalyzer/layout/compare/v0.2.1...v0.2.2) (2019-04-06)
 
 
