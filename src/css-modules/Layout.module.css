@@ -29,6 +29,9 @@
 .column {
   flex-direction: column;
 }
+.column.reverse {
+  flex-direction: column-reverse;
+}
 .column > .spacer {
   /* important needed to override the pad prop and others generally */
   margin-top: auto !important;
@@ -38,6 +41,9 @@
   flex-direction: row;
   min-width: 0;
   max-height: 100%;
+}
+.row.reverse {
+  flex-direction: row-reverse;
 }
 .row > .spacer {
   /* important needed to override the pad prop and others generally */

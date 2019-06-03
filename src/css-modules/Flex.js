@@ -11,6 +11,7 @@ function Flex(
   {
     as: Component,
     direction,
+    reverse,
     pad,
     wrap,
     grow,
@@ -39,6 +40,7 @@ function Flex(
       className={classNames(
         className,
         direction && styles[camelCase(direction)],
+        reverse && styles.reverse,
         pad && styles[`pad${pad === true ? '3' : pad}`],
         wrap && styles.wrap,
         grow && styles.grow,

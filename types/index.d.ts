@@ -62,6 +62,7 @@ export interface BlockProps {
 export interface FlexProps extends BlockProps {
   /** default to 'row' */
   direction?: 'row' | 'column';
+  reverse?: boolean;
   pad?: boolean | number;
   wrap?: boolean;
   /** default to 'stretch' */
