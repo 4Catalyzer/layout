@@ -1,10 +1,11 @@
 :root {
-  --fc-layout-pad-1: 2px;
-  --fc-layout-pad-2: 6px;
-  --fc-layout-pad-3: 10px;
-  --fc-layout-pad-4: 20px;
-  --fc-layout-pad-5: 30px;
-  --fc-layout-pad-6: 40px;
+  --fc-layout-pad-1: 4px;
+  --fc-layout-pad-2: 8px;
+  --fc-layout-pad-3: 12px;
+  --fc-layout-pad-4: 16px;
+  --fc-layout-pad-5: 24px;
+  --fc-layout-pad-6: 32px;
+  --fc-layout-pad-7: 40px;
 }
 
 .block {
@@ -250,4 +251,17 @@
 }
 .pad-6.wrap > * {
   margin: var(--fc-layout-pad-6);
+}
+
+.pad-7.row > * + * {
+  margin-left: var(--fc-layout-pad-7);
+}
+.pad-7.column > * + * {
+  margin-top: var(--fc-layout-pad-7);
+}
+.pad-7.wrap {
+  margin: calc(var(--fc-layout-pad-7) * -1);
+}
+.pad-7.wrap > * {
+  margin: var(--fc-layout-pad-7);
 }
