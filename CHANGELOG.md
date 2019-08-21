@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/4Catalyzer/layout/compare/v0.2.3...v1.0.0) (2019-08-21)
+
+
+### Features
+
+* adjust spacing scale ([#8](https://github.com/4Catalyzer/layout/issues/8)) ([8bfe2d6](https://github.com/4Catalyzer/layout/commit/8bfe2d6))
+
+
+### BREAKING CHANGES
+
+* padding spaces are different
+
 ## [0.2.3](https://github.com/4Catalyzer/layout/compare/v0.2.2...v0.2.3) (2019-06-03)
 
 
