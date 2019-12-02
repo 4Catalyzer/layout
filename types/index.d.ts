@@ -11,9 +11,9 @@ type PropsOf<
   : Tag extends React.FunctionComponent<infer Props>
   ? Props & React.Attributes
   : Tag extends React.ComponentClass<infer Props2>
-  ? (Tag extends new (...args: any[]) => infer Instance
-      ? Props2 & React.ClassAttributes<Instance>
-      : never)
+  ? Tag extends new (...args: any[]) => infer Instance
+    ? Props2 & React.ClassAttributes<Instance>
+    : never
   : never;
 
 type ReplaceProps<Inner extends React.ElementType, P> = Omit<
