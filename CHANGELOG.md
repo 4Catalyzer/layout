@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/4Catalyzer/layout/compare/v1.0.0...v1.0.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* Fix typing for flex prop ([#18](https://github.com/4Catalyzer/layout/issues/18)) ([5afc8b4](https://github.com/4Catalyzer/layout/commit/5afc8b4db044f2cee85103d49fd6466e9ad69770))
+
 # [1.0.0](https://github.com/4Catalyzer/layout/compare/v0.2.3...v1.0.0) (2019-08-21)
 
 
