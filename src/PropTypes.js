@@ -33,7 +33,11 @@ export const propTypes = {
   wrap: PropTypes.bool,
   grow: PropTypes.bool,
   inline: PropTypes.bool,
-  flex: PropTypes.any,
+  flex: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   align: align.isRequired,
   alignSelf: align,
   alignContent: content,

@@ -54,7 +54,7 @@ type Content =
 export interface BlockProps {
   grow?: boolean;
   inline?: boolean;
-  flex?: boolean | number;
+  flex?: boolean | number | string;
   /** default to 'stretch' */
   alignSelf?: Align;
 }
