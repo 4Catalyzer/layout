@@ -2,10 +2,8 @@
 
 import classNames from 'classnames';
 import React from 'react';
-
-import { propTypes, defaultProps } from '../PropTypes';
-import camelCase from './camelCase';
 import styles from './Layout.module.css';
+import { defaultProps, propTypes } from './PropTypes';
 
 function Block(
   {
@@ -41,7 +39,7 @@ function Block(
         className,
         grow && styles.grow,
         inline ? styles.blockInline : styles.block,
-        alignSelf && styles[camelCase(alignSelf)],
+        alignSelf && styles[alignSelf],
       )}
     />
   );
