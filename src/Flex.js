@@ -2,10 +2,8 @@
 
 import classNames from 'classnames';
 import React from 'react';
-
-import { propTypes, defaultProps } from '../PropTypes';
-import camelCase from './camelCase';
 import styles from './Layout.module.css';
+import { defaultProps, propTypes } from './PropTypes';
 
 function Flex(
   {
@@ -39,16 +37,16 @@ function Flex(
       style={combinedStyle}
       className={classNames(
         className,
-        direction && styles[camelCase(direction)],
+        direction && styles[direction],
         reverse && styles.reverse,
-        pad && styles[`pad${pad === true ? '3' : pad}`],
+        pad && styles[`pad-${pad === true ? '3' : pad}`],
         wrap && styles.wrap,
         grow && styles.grow,
         inline ? styles.flexInline : styles.flex,
-        align && styles[camelCase(`align-${align}`)],
-        alignSelf && styles[camelCase(`self-${alignSelf}`)],
-        alignContent && styles[camelCase(`align-content-${alignContent}`)],
-        justify && styles[camelCase(`justify-${justify}`)],
+        align && styles[`align-${align}`],
+        alignSelf && styles[`self-${alignSelf}`],
+        alignContent && styles[`align-content-${alignContent}`],
+        justify && styles[`justify-${justify}`],
       )}
     />
   );

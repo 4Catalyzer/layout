@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-
-import { propTypes, defaultProps } from '../PropTypes';
 import Block from './Block';
 import Flex from './Flex';
 import styles from './Layout.module.css';
+import { defaultProps, propTypes } from './PropTypes';
 
 function Layout({ display, ...props }, ref) {
   if (display === 'block') return Block.render(props, ref);
