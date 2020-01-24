@@ -35,9 +35,8 @@ export default {
       renderChunk(code, _, { format }) {
         return (
           (format === 'cjs'
-            ? '"use strict";\nrequire("./Layout.module.css");\n'
-            : 'import "./Layout.module.css";\n') +
-          code.replace(/^'use strict';/, '')
+            ? '"use strict";\nrequire("./Layout.css");\n'
+            : 'import "./Layout.css";\n') + code.replace(/^'use strict';/, '')
         );
       },
     },
