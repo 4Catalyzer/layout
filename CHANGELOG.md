@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/4Catalyzer/layout/compare/v1.0.1...v2.0.0) (2020-01-28)
+
+
+* feat!: precompile css-modules, update spacing (#24) ([5ecc877](https://github.com/4Catalyzer/layout/commit/5ecc877fb7429d7ce1a729440c46abb8207cfe93)), closes [#24](https://github.com/4Catalyzer/layout/issues/24) [#27](https://github.com/4Catalyzer/layout/issues/27)
+
+
+### BREAKING CHANGES
+
+* restructured the styling a lot 
+
+* feat!: precompile css-modules, update spacing
+
+* use custom properties
+
 ## [1.0.1](https://github.com/4Catalyzer/layout/compare/v1.0.0...v1.0.1) (2020-01-09)
 
 
