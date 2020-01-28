@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/4Catalyzer/layout/compare/v2.0.0...v2.0.1) (2020-01-28)
+
+
+### Bug Fixes
+
+* add types to build ([7eb0fe4](https://github.com/4Catalyzer/layout/commit/7eb0fe4dbd99e30a935a1dfed9ebaf7c3ebd11c0))
+
 # [2.0.0](https://github.com/4Catalyzer/layout/compare/v1.0.1...v2.0.0) (2020-01-28)
 
 
