@@ -5,13 +5,11 @@
     "lib",
     "es"
   ],
-  "main": "lib/css-modules/index.js",
-  "module": "es/css-modules/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "npm run build:lib && npm run build:es && npm run build:types",
-    "build:es": "babel src -d es --env-name esm --ignore **/__tests__ --delete-dir-on-start -D",
-    "build:lib": "babel src -d lib --ignore **/__tests__ --delete-dir-on-start -D",
+    "build": "rm -rf es lib && rollup -c",
     "build:types": "cp types/* lib",
     "format": "eslint . --fix && npm run prettier -- --write",
     "lint": "eslint . && npm run prettier -- -l",
@@ -37,6 +35,11 @@
     "singleQuote": true,
     "trailingComma": "all"
   },
+  "importSort": {
+    ".js, .ts, .tsx": {
+      "style": "@4c/import-sort"
+    }
+  },
   "release": {
     "extends": [
       "@4c/semantic-release-config"
@@ -58,9 +61,12 @@
   },
   "devDependencies": {
     "@4c/babel-preset": "^7.3.0",
+    "@4c/import-sort": "^4.3.6",
     "@4c/semantic-release-config": "^2.0.4",
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
+    "@csstools/postcss-sass": "^4.0.0",
+    "@modular-css/rollup": "^25.2.0",
     "babel-eslint": "^10.0.3",
     "dtslint": "^2.0.5",
     "eslint": "^6.8.0",
@@ -73,8 +79,14 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.3",
+    "postcss-scss": "^2.0.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
-    "semantic-release": "^17.0.0"
+    "rollup": "^1.29.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "semantic-release": "^17.0.0",
+    "sass": "^1.25.0"
   }
 }

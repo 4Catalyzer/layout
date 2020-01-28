@@ -29,7 +29,11 @@ const content = PropTypes.oneOf([
 export const propTypes = {
   as: PropTypes.elementType.isRequired,
   direction: PropTypes.oneOf(['row', 'column']).isRequired,
-  pad: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  pad: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   wrap: PropTypes.bool,
   grow: PropTypes.bool,
   inline: PropTypes.bool,

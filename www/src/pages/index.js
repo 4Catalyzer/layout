@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Layout from '../../../src/css-modules';
+// eslint-disable-next-line
+import Layout from '../../..';
 
 // eslint-disable-next-line
 const styles = css`

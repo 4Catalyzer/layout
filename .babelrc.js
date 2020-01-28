@@ -1,12 +1,10 @@
-module.exports = api => ({
+module.exports = {
   presets: [
     [
-      '@4c',
+      '@4c/babel-preset/esm',
       {
-        target: 'web',
-        targets: {},
-        modules: api.env() === 'esm' ? false : 'commonjs',
+        debug: false,
       },
     ],
   ],
-});
+};

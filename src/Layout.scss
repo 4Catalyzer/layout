@@ -1,0 +1,79 @@
+$spacers: (
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  8: 32px,
+  10: 40px,
+  12: 48px,
+  16: 64px,
+  20: 80px,
+  24: 96px,
+  32: 128px,
+  40: 160px,
+  48: 192px,
+  56: 224px,
+  64: 256px,
+);
+
+.layout {
+  display: var(--fcl-d, flex);
+  align-items: var(--fcl-a, unset);
+  align-self: var(--fcl-as, unset);
+  align-content: var(--fcl-ac, unset);
+  justify-content: var(--fcl-jc, unset);
+  flex: var(--fcl-f, unset);
+  flex-wrap: var(--fcl-w, unset);
+}
+
+.column {
+  flex-direction: column;
+
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+  & > .spacer {
+    /* important needed to override the pad prop and others generally */
+    margin-top: auto !important;
+  }
+}
+
+.row {
+  flex-direction: row;
+  min-width: 0;
+  max-height: 100%;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+  & > .spacer {
+    /* important needed to override the pad prop and others generally */
+    margin-left: auto !important;
+  }
+}
+
+@each $level, $spacer in $spacers {
+  .pad-#{$level} {
+    &.row > * + * {
+      margin-left: var(
+        --fc-layout-pad-#{$level},
+        #{map-get($spacers, $level)}
+      );
+    }
+
+    &.column > * + * {
+      margin-top: var(--fc-layout-pad-#{$level}, #{map-get($spacers, $level)});
+    }
+
+    &.wrap {
+      margin: calc(
+        var(--fc-layout-pad-#{$level}, #{map-get($spacers, $level)}) * -1
+      );
+      & > * {
+        margin: var(--fc-layout-pad-#{$level}, #{map-get($spacers, $level)});
+      }
+    }
+  }
+}

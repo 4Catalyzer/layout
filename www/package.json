@@ -8,8 +8,9 @@
     "start": "yarn --cwd ../ build && gatsby develop"
   },
   "dependencies": {
+    "astroturf": "^0.10.2",
     "gatsby": "^2.18.6",
-    "gatsby-plugin-css-literal-loader": "^1.0.0",
+    "gatsby-plugin-astroturf": "^0.2.1",
     "gatsby-plugin-sass": "^2.1.24",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
