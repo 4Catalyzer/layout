@@ -23,6 +23,7 @@ export default {
     resolve(),
     babel(),
     css({
+      include: /\.scss$/i,
       namedExports: false,
       before: [sass()],
       map: false,

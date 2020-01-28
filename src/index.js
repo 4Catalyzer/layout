@@ -1,8 +1,9 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './Layout.css';
 import { defaultProps, propTypes } from './PropTypes';
+
+import styles from './Layout.scss';
 
 export const Spacing = {
   1: 'var(--fcl-p-1, 4px)',
