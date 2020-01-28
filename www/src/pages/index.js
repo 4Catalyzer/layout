@@ -1,4 +1,6 @@
 import React from 'react';
+
+// eslint-disable-next-line
 import Layout from '../../..';
 
 // eslint-disable-next-line
