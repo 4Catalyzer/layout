@@ -5,26 +5,6 @@ import { defaultProps, propTypes } from './PropTypes';
 
 import styles from './Layout.scss';
 
-export const Spacing = {
-  1: 'var(--fcl-p-1, 4px)',
-  2: 'var(--fcl-p-2, 8px)',
-  3: 'var(--fcl-p-3, 12px)',
-  4: 'var(--fcl-p-4, 16px)',
-  5: 'var(--fcl-p-5, 20px)',
-  6: 'var(--fcl-p-6, 24px)',
-  8: 'var(--fcl-p-8, 32px)',
-  10: 'var(--fcl-p-10, 40px)',
-  12: 'var(--fcl-p-12, 48px)',
-  16: 'var(--fcl-p-16, 64px)',
-  20: 'var(--fcl-p-20, 80px)',
-  24: 'var(--fcl-p-24, 96px)',
-  32: 'var(--fcl-p-32, 128px)',
-  40: 'var(--fcl-p-40, 160px)',
-  48: 'var(--fcl-p-48, 192px)',
-  56: 'var(--fcl-p-56, 224px)',
-  64: 'var(--fcl-p-64, 256px)',
-};
-
 const Block = React.forwardRef(
   (
     {

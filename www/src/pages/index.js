@@ -2,16 +2,16 @@ import React from 'react';
 import Layout from '../../..';
 
 // eslint-disable-next-line
-// const styles = css`
-//   html {
-//     box-sizing: border-box;
-//   }
-//   *,
-//   *::before,
-//   *::after {
-//     box-sizing: inherit;
-//   }
-// `;
+const styles = css`
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+`;
 
 const propTypes = {};
 
