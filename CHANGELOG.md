@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/4Catalyzer/layout/compare/v2.0.1...v2.0.2) (2020-01-29)
+
+
+### Bug Fixes
+
+* grow being ignored ([c979771](https://github.com/4Catalyzer/layout/commit/c979771f4de79c2d8776daed06e8e1726aca393e))
+
 ## [2.0.1](https://github.com/4Catalyzer/layout/compare/v2.0.0...v2.0.1) (2020-01-28)
 
 
