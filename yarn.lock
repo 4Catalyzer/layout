@@ -984,10 +984,10 @@
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.0.4.tgz#936961b7eade01f6d331d31cc9fb512d1fb3981a"
   integrity sha512-zd92HkqxeEprsyM3JLGr+jhhMkmY0NCYQ+Jyw/DC6qZHiFejdO19doYcH5/iMUUPEYLI2h/k7TETqAEez8Btog==
 
-"@modular-css/processor@^25.3.1":
-  version "25.3.1"
-  resolved "https://registry.yarnpkg.com/@modular-css/processor/-/processor-25.3.1.tgz#bbef7344c642dc3f3bdfe6af513de8a932db9870"
-  integrity sha512-S4UIu4PWCYu7Bx09zZ4AHE+UefYLWsWEP7nnQk1bg4aXFrWPnaZHxSF8bJ0Ieg8YJdrFRi8M+ShMF+xP7PMPzg==
+"@modular-css/processor@^25.4.0":
+  version "25.4.0"
+  resolved "https://registry.yarnpkg.com/@modular-css/processor/-/processor-25.4.0.tgz#462ef871c230c074808fc19b0c70b146f8f8eecc"
+  integrity sha512-vZEaAzSEymShQy4y78feM+LSm/W3ldEUFni5dk7zctU4QZ4BUno/sw3sGRXgYIb6YEwUaWmxPgeRyccgNNCVmg==
   dependencies:
     dependency-graph "^0.8.0"
     escape-string-regexp "^2.0.0"
@@ -999,12 +999,12 @@
     resolve-from "^5.0.0"
     unique-slug "^2.0.0"
 
-"@modular-css/rollup@^25.3.1":
-  version "25.3.1"
-  resolved "https://registry.yarnpkg.com/@modular-css/rollup/-/rollup-25.3.1.tgz#dbf9bf129256e4bd07540f978501c027d3445f5b"
-  integrity sha512-6s1XDLXljboNt9odGXNl1fsMp+02Dv1pNug6EFV0eZO+L0Zk+TsCg9dRGm4seXPql9VSBklws/GFVKjoc/4ADg==
+"@modular-css/rollup@^25.4.0":
+  version "25.4.0"
+  resolved "https://registry.yarnpkg.com/@modular-css/rollup/-/rollup-25.4.0.tgz#2464acd9139bc3cbfa078d4567a5eb2f6b999335"
+  integrity sha512-gcBRhvJe8Vc8E+VFMEhmSdCPrxGGx+h2qI+4E5KkA7mH0r71fHoVZta0tgCBBs0fm5H5u050cO67RSVHCvDuZQ==
   dependencies:
-    "@modular-css/processor" "^25.3.1"
+    "@modular-css/processor" "^25.4.0"
     dedent "0.7.0"
     esutils "^2.0.2"
     rollup-pluginutils "^2.0.1"
@@ -3072,10 +3072,10 @@ eslint-plugin-react-hooks@^2.3.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.3.0.tgz#53e073961f1f5ccf8dd19558036c1fac8c29d99a"
   integrity sha512-gLKCa52G4ee7uXzdLiorca7JIQZPPXRAQDXV83J4bUEeUuc5pIEyZYAZ45Xnxe5IuupxEqHS+hUhSLIimK1EMw==
 
-eslint-plugin-react@^7.18.2:
-  version "7.18.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.18.2.tgz#83d52cd783524cb5f6616e029c892ec08ee59e23"
-  integrity sha512-6m1zFCSB8OKVIVyGipz1TJxVuNfgvbbUa7O9fxqyyT0b15tB2X/rxMNCGQv3LTD4XOKmG/ONr52FZHur0OKFkg==
+eslint-plugin-react@^7.18.3:
+  version "7.18.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.18.3.tgz#8be671b7f6be095098e79d27ac32f9580f599bc8"
+  integrity sha512-Bt56LNHAQCoou88s8ViKRjMB2+36XRejCQ1VoLj716KI1MoE99HpTVvIThJ0rvFmG4E4Gsq+UgToEjn+j044Bg==
   dependencies:
     array-includes "^3.1.1"
     doctrine "^2.1.0"
