@@ -20,12 +20,12 @@ $spacers: (
 
 .layout {
   display: var(--fcl-d, flex);
-  align-items: var(--fcl-a, unset);
-  align-self: var(--fcl-as, unset);
-  align-content: var(--fcl-ac, unset);
-  justify-content: var(--fcl-jc, unset);
-  flex: var(--fcl-f, unset);
-  flex-wrap: var(--fcl-w, unset);
+  align-items: var(--fcl-a, initial);
+  align-self: var(--fcl-as, initial);
+  align-content: var(--fcl-ac, initial);
+  justify-content: var(--fcl-jc, initial);
+  flex: var(--fcl-f, initial);
+  flex-wrap: var(--fcl-w, initial);
 }
 
 .column {

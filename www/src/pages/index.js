@@ -42,6 +42,12 @@ function Page() {
             <Box />
             <Box />
           </Layout.Flex>
+
+          <Layout.Flex pad="2" grow>
+            <Layout.Flex pad="2">
+              <Box>should not grow</Box>
+            </Layout.Flex>
+          </Layout.Flex>
         </Layout.Flex>
         <Box style={{ width: 250 }}>
           <Layout grow pad={4} wrap justify="center">
