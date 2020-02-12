@@ -39,8 +39,8 @@ const Block = React.forwardRef(
         style={{
           ...style,
           '--fcl-d': inline ? 'inline-block' : 'block',
-          '--fcl-as': alignSelf,
-          '--fcl-f': flexValue,
+          '--fcl-as': alignSelf || 'initial',
+          '--fcl-f': flexValue || 'initial',
         }}
         className={classNames(className, styles.layout)}
       />
@@ -85,12 +85,12 @@ const Flex = React.forwardRef(
         style={{
           ...style,
           '--fcl-d': inline ? 'inline-flex' : 'flex',
-          '--fcl-a': align,
-          '--fcl-ac': alignContent,
-          '--fcl-as': alignSelf,
-          '--fcl-jc': justify,
-          '--fcl-w': wrap ? 'wrap' : undefined,
-          '--fcl-f': flexValue,
+          '--fcl-a': align || 'initial',
+          '--fcl-ac': alignContent || 'initial',
+          '--fcl-as': alignSelf || 'initial',
+          '--fcl-jc': justify || 'initial',
+          '--fcl-w': wrap ? 'wrap' : 'initial',
+          '--fcl-f': flexValue || 'initial',
         }}
         className={classNames(
           className,
