@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/4Catalyzer/layout/compare/v2.0.2...v2.0.3) (2020-02-12)
+
+
+### Bug Fixes
+
+* values should not cascade ([#30](https://github.com/4Catalyzer/layout/issues/30)) ([712d4a3](https://github.com/4Catalyzer/layout/commit/712d4a37188fcd99b826997904c3a0b46c05aeb9))
+
 ## [2.0.2](https://github.com/4Catalyzer/layout/compare/v2.0.1...v2.0.2) (2020-01-29)
 
 
