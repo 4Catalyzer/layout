@@ -1,21 +1,22 @@
 language: node_js
-
 node_js:
-  - "12"
-  - "10"
-
-after_success:
-  - yarn codecov
-
-cache: yarn
-branches:
-  only:
-    - master
+  - node
 
 jobs:
   include:
     - stage: release
-      node_js: "10"
       script:
-        - yarn run build
+        - yarn build
         - yarn semantic-release
+      after_script: skip
+
+cache:
+  yarn: true
+  npm: true
+
+after_script:
+  - yarn codecov
+
+branches:
+  only:
+    - master
