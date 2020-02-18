@@ -2,9 +2,8 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { defaultProps, propTypes } from './PropTypes';
-
 import styles from './Layout.scss';
+import { defaultProps, propTypes } from './PropTypes';
 
 const Block = React.forwardRef(
   (
@@ -75,7 +74,7 @@ const Flex = React.forwardRef(
   ) => {
     let flexValue = flex === true ? '1' : flex;
     if (grow && flexValue == null) {
-      flexValue = '1 0 auto';
+      flexValue = '1';
     }
 
     return (
