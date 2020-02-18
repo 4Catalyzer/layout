@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/4Catalyzer/layout/compare/v2.0.3...v2.0.4) (2020-02-18)
+
+
+### Bug Fixes
+
+* flex-grow ([#35](https://github.com/4Catalyzer/layout/issues/35)) ([feab61d](https://github.com/4Catalyzer/layout/commit/feab61d231a5175723c8827bdbeba730ab4ab8a8))
+
 ## [2.0.3](https://github.com/4Catalyzer/layout/compare/v2.0.2...v2.0.3) (2020-02-12)
 
 
