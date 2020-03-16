@@ -973,10 +973,10 @@
   resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-2.0.4.tgz#936961b7eade01f6d331d31cc9fb512d1fb3981a"
   integrity sha512-zd92HkqxeEprsyM3JLGr+jhhMkmY0NCYQ+Jyw/DC6qZHiFejdO19doYcH5/iMUUPEYLI2h/k7TETqAEez8Btog==
 
-"@modular-css/processor@^25.4.1":
-  version "25.4.1"
-  resolved "https://registry.yarnpkg.com/@modular-css/processor/-/processor-25.4.1.tgz#dffce2853bf311a347c993c634fe7509ac680da8"
-  integrity sha512-zb0Dx2Ms2jDYkuGWVEDpBBGQ07bBviCWqEIhTJkwY+OUdRRzb/Q8VRNwDIaBO52nP8o36G8Fxe+Hi5ef/8vq4Q==
+"@modular-css/processor@^25.5.0":
+  version "25.5.0"
+  resolved "https://registry.yarnpkg.com/@modular-css/processor/-/processor-25.5.0.tgz#a91aa4259c200a934a04360b2aa878b45599e061"
+  integrity sha512-64w2GezKU64KyPA1kSuyoYIMI4iqhLcXv0b1ZeL9+rSVlEfgA/fue7TdqD6plc81DRa+klGI+mN7jpTFZt4Q6w==
   dependencies:
     dependency-graph "^0.9.0"
     escape-string-regexp "^2.0.0"
@@ -988,12 +988,12 @@
     resolve-from "^5.0.0"
     unique-slug "^2.0.0"
 
-"@modular-css/rollup@^25.4.1":
-  version "25.4.1"
-  resolved "https://registry.yarnpkg.com/@modular-css/rollup/-/rollup-25.4.1.tgz#3de941eea3e2909bfc50a274fe701226112fee91"
-  integrity sha512-Oe+BFIhuqOT6snuzk5P8WPPpgmfwzWwtgoUyYcvw/CwP8xBm/eumM36g6g/FjHPPjoQgPpAht7WpwZuUUmMi6Q==
+"@modular-css/rollup@^25.5.0":
+  version "25.5.0"
+  resolved "https://registry.yarnpkg.com/@modular-css/rollup/-/rollup-25.5.0.tgz#92eb98148f9c3d7345f727868b62ac81104bdb48"
+  integrity sha512-gR8VHI2ghBZOyG+FqV6/sKK2FkwOyZTDrjgzz3BVHyIDfNBIQ8XdY3zKD2d9hyaMtOQg2RHB4d2/ViQ2t4dtEg==
   dependencies:
-    "@modular-css/processor" "^25.4.1"
+    "@modular-css/processor" "^25.5.0"
     dedent "0.7.0"
     esutils "^2.0.2"
     rollup-pluginutils "^2.0.1"
@@ -6916,10 +6916,10 @@ rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.0.2.tgz#0f63aa02bb106802a387380ee88b90b5c0449eaa"
-  integrity sha512-99VIc2DHm+HEhdla2ASH/LaomWS3v7RDANamD65w24TQTNVs3vtRM+oiFsP4KvUCri5+p5Q5xoXscUnIdE8gJA==
+rollup@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.0.6.tgz#865d6bb15a28cff3429ea1dc57236013661cb9de"
+  integrity sha512-P42IlI6a/bxh52ed8hEXXe44LcHfep2f26OZybMJPN1TTQftibvQEl3CWeOmJrzqGbFxOA000QXDWO9WJaOQpA==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -6971,10 +6971,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@^1.16.1, sass@^1.26.2:
-  version "1.26.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.2.tgz#4e17c5c2394e2ee7ffd653ac1d862314a6a5767b"
-  integrity sha512-9TRp1d1NH0mWH8rqaR/jCS05f/TFD1ykPF2zSYviprMhLb0EmXVqtKMUHsvDt3YIT/jbSK6qAvUlfCW/HJkdCw==
+sass@^1.16.1, sass@^1.26.3:
+  version "1.26.3"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.3.tgz#412df54486143b76b5a65cdf7569e86f44659f46"
+  integrity sha512-5NMHI1+YFYw4sN3yfKjpLuV9B5l7MqQ6FlkTcC4FT+oHbBRUZoSjHrrt/mE0nFXJyY2kQtU9ou9HxvFVjLFuuw==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 

@@ -60,7 +60,7 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
     "@csstools/postcss-sass": "^4.0.0",
-    "@modular-css/rollup": "^25.4.1",
+    "@modular-css/rollup": "^25.5.0",
     "babel-eslint": "^10.1.0",
     "dtslint": "^3.3.0",
     "eslint": "^6.8.0",
@@ -76,11 +76,11 @@
     "postcss-scss": "^2.0.0",
     "prettier": "^1.19.1",
     "react": "^16.13.0",
-    "rollup": "^2.0.2",
+    "rollup": "^2.0.6",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "semantic-release": "^17.0.4",
-    "sass": "^1.26.2"
+    "sass": "^1.26.3"
   }
 }
