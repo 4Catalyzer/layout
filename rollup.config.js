@@ -1,8 +1,8 @@
+import sass from '@csstools/postcss-sass';
+import css from '@modular-css/rollup';
 import sassSyntax from 'postcss-scss';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
-import sass from '@csstools/postcss-sass';
-import css from '@modular-css/rollup';
 
 export default {
   input: 'src/index.js',
