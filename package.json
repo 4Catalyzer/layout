@@ -62,8 +62,8 @@
     "@csstools/postcss-sass": "^4.0.0",
     "@modular-css/rollup": "^25.8.2",
     "babel-eslint": "^10.1.0",
-    "dtslint": "^4.0.4",
-    "eslint": "^7.12.1",
+    "dtslint": "^4.0.5",
+    "eslint": "^7.13.0",
     "eslint-config-4catalyzer-react": "^1.0.12",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
@@ -73,14 +73,14 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
-    "postcss-scss": "^3.0.2",
+    "postcss-scss": "^3.0.4",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
-    "rollup": "^2.33.0",
+    "rollup": "^2.33.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "semantic-release": "^17.2.2",
-    "sass": "^1.28.0"
+    "sass": "^1.29.0"
   }
 }
