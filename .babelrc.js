@@ -1,9 +1,10 @@
 module.exports = {
   presets: [
     [
-      '@4c/babel-preset/esm',
+      '@4c/babel-preset',
       {
         debug: false,
+        modules: false
       },
     ],
   ],
