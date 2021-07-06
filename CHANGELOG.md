@@ -1,3 +1,14 @@
+# [2.1.0](https://github.com/4Catalyzer/layout/compare/v2.0.5...v2.1.0) (2021-07-06)
+
+
+### Features
+
+* **perf:** remove large union for looser type but much faster ([#103](https://github.com/4Catalyzer/layout/issues/103)) ([b48cd2f](https://github.com/4Catalyzer/layout/commit/b48cd2f6ec3ba691f734d78148167ef27a3b34ef))
+
+
+
+
+
 ## [2.0.4](https://github.com/4Catalyzer/layout/compare/v2.0.3...v2.0.4) (2020-02-18)
 
 
