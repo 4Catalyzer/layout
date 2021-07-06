@@ -1,33 +1,23 @@
-// TypeScript Version: 3.2
+// TypeScript Version: 4.2
 
 import * as React from 'react';
 
-type Omit<T, U> = Pick<T, Exclude<keyof T, keyof U>>;
+export type IntrinsicElementsKeys = keyof JSX.IntrinsicElements;
 
-type PropsOf<
-  Tag extends React.ElementType
-> = Tag extends keyof JSX.IntrinsicElements
-  ? JSX.IntrinsicElements[Tag]
-  : Tag extends React.FunctionComponent<infer Props>
-  ? Props & React.Attributes
-  : Tag extends React.ComponentClass<infer Props2>
-  ? Tag extends new (...args: any[]) => infer Instance
-    ? Props2 & React.ClassAttributes<Instance>
-    : never
-  : never;
+export type ElementType =
+  | IntrinsicElementsKeys
+  | React.JSXElementConstructor<any>;
 
-type ReplaceProps<Inner extends React.ElementType, P> = Omit<
-  PropsOf<Inner>,
-  P
+export type PropsWithAs<
+  Inner extends string | React.ComponentType<any>,
+  P,
+> = Omit<
+  React.ComponentProps<Inner extends ElementType ? Inner : never>,
+  keyof P | 'as'
 > &
-  P;
+  P & { as?: Inner };
 
-declare class ComponentWithAs<
-  As extends React.ElementType,
-  P = {}
-> extends React.Component<ReplaceProps<As, { as?: As } & P>> {}
-
-type Align =
+export type Align =
   | 'start'
   | 'end'
   | 'flex-start'
@@ -38,7 +28,7 @@ type Align =
   | 'first-baseline'
   | 'last-baseline';
 
-type Content =
+export type Content =
   | 'left'
   | 'right'
   | 'flex-start'
@@ -59,7 +49,12 @@ export interface BlockProps {
   alignSelf?: Align;
 }
 
-export interface FlexProps extends BlockProps {
+export interface FlexProps {
+  grow?: boolean;
+  inline?: boolean;
+  flex?: boolean | number | string;
+  /** default to 'stretch' */
+  alignSelf?: Align;
   /** default to 'row' */
   direction?: 'row' | 'column';
   reverse?: boolean;
@@ -72,25 +67,27 @@ export interface FlexProps extends BlockProps {
   justify?: Content;
 }
 
-declare class Flex<
-  As extends React.ElementType = 'div'
-> extends ComponentWithAs<As, FlexProps> {}
-
-declare class Block<
-  As extends React.ElementType = 'div'
-> extends ComponentWithAs<As, BlockProps> {}
-
-export type LayoutProps =
-  | ({ display?: 'flex' } & FlexProps)
-  | ({ display: 'block' } & BlockProps);
-
-declare class Layout<
-  As extends React.ElementType = 'div'
-> extends ComponentWithAs<As, LayoutProps> {
-  static Flex: typeof Flex;
-  static Block: typeof Block;
-
-  static Spacer: React.ComponentType;
+declare interface Flex {
+  <As extends string | React.ComponentType<any> = 'div'>(
+    props: PropsWithAs<As, FlexProps>,
+  ): React.ReactElement;
 }
+declare interface Block {
+  <As extends string | React.ComponentType<any> = 'div'>(
+    props: PropsWithAs<As, BlockProps>,
+  ): React.ReactElement;
+}
+
+export type LayoutProps = FlexProps;
+interface Layout {
+  <As extends string | React.ComponentType<any> = 'div'>(
+    props: PropsWithAs<As, FlexProps>,
+  ): React.ReactElement;
+  Flex: Flex;
+  Block: Block;
+  Spacer: React.ComponentType;
+}
+
+declare const Layout: Layout;
 
 export default Layout;

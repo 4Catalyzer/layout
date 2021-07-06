@@ -24,7 +24,6 @@ export default {
     babel(),
     css({
       include: /\.scss$/i,
-      namedExports: false,
       before: [sass()],
       map: false,
       postcss: {

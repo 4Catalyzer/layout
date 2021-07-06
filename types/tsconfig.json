@@ -8,6 +8,7 @@
     "types": [],
     "noEmit": true,
     "baseUrl": ".",
+    "skipLibCheck": true,
     "paths": {
       "@4c/layout": ["."]
     }
