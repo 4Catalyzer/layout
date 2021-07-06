@@ -15,8 +15,7 @@
     "lint": "eslint . && npm run prettier -- -l",
     "prepublishOnly": "npm run build",
     "prettier": "prettier --ignore-path .eslintignore '**/*.{css,json,md,ts}'",
-    "test": "npm run lint && npm run test:ts",
-    "test:ts": "dtslint types"
+    "test": "npm run lint"
   },
   "publishConfig": {
     "access": "public"

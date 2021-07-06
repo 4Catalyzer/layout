@@ -1,5 +1,3 @@
-// TypeScript Version: 4.2
-
 import * as React from 'react';
 
 export type IntrinsicElementsKeys = keyof JSX.IntrinsicElements;

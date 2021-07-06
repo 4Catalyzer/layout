@@ -1,4 +1,4 @@
-// TypeScript Version: 3.2
+// TypeScript Version: 4.0
 
 import Layout from '@4c/layout';
 import * as React from 'react';
