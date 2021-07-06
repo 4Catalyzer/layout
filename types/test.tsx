@@ -1,7 +1,7 @@
 // TypeScript Version: 3.2
 
-import * as React from 'react';
 import Layout from '@4c/layout';
+import * as React from 'react';
 
 <Layout />;
 <Layout direction="column" reverse />;
@@ -22,7 +22,7 @@ interface FooProps {
   foo: boolean;
 }
 
-function Foo({ foo }: FooProps) {
+function Foo({ foo: _ }: FooProps) {
   return null;
 }
 

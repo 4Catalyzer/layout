@@ -33,17 +33,15 @@
     "singleQuote": true,
     "trailingComma": "all"
   },
-  "release": {
-    "extends": [
-      "@4c/semantic-release-config"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/4Catalyzer/layout.git"
   },
   "author": "4Catalyzer",
   "license": "MIT",
+  "release": {
+    "conventionalCommits": true
+  },
   "dependencies": {
     "@types/react": ">=17.0.13",
     "classnames": "^2.3.1",
@@ -59,6 +57,8 @@
     "@babel/core": "^7.14.6",
     "@csstools/postcss-sass": "^4.0.0",
     "@modular-css/rollup": "^26.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
     "babel-eslint": "^10.1.0",
     "dtslint": "^4.1.1",
     "eslint": "^7.30.0",
