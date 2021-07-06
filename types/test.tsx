@@ -30,12 +30,12 @@ function Foo({ foo }: FooProps) {
 <Layout.Flex foo />; // $ExpectError
 <Layout.Block foo />; // $ExpectError
 
-<Layout as={Foo} />; // $ExpectError
-<Layout.Flex as={Foo} />; // $ExpectError
-<Layout.Block as={Foo} />; // $ExpectError
+<Layout as={Foo} />; // $ExpectError       `foo` is required
+<Layout.Flex as={Foo} />; // $ExpectError  `foo` is required
+<Layout.Block as={Foo} />; // $ExpectError `foo` is required
 
 <Layout as={Foo} foo />;
 <Layout.Flex as={Foo} foo />;
 <Layout.Block as={Foo} foo />;
 
-<Layout.Spacer as={Foo} foo />; // $ExpectError
+<Layout.Spacer as={Foo} foo />; // $ExpectError there is no `as`
