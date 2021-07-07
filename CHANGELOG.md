@@ -1,3 +1,14 @@
+## [2.1.1](https://github.com/4Catalyzer/layout/compare/v2.1.0...v2.1.1) (2021-07-07)
+
+
+### Bug Fixes
+
+* css import ([#104](https://github.com/4Catalyzer/layout/issues/104)) ([8dcab5f](https://github.com/4Catalyzer/layout/commit/8dcab5f16b98a3eb36a661129e4e7cfbd24d2464))
+
+
+
+
+
 # [2.1.0](https://github.com/4Catalyzer/layout/compare/v2.0.5...v2.1.0) (2021-07-06)
 
 
