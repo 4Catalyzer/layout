@@ -50,7 +50,7 @@
     "react": ">=16.4.1"
   },
   "devDependencies": {
-    "@4c/babel-preset": "^8.1.1",
+    "@4c/babel-preset": "^10.2.1",
     "@4c/semantic-release-config": "^2.1.0",
     "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.6",
